@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SystemViewControllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2021-09-28 22.54.24" translatesAutoresizingMaskIntoConstraints="NO" id="pAG-KP-Fif">
+                                <rect key="frame" x="20" y="44" width="374" height="373"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tKn-ph-85P">
+                                <rect key="frame" x="23.5" y="433" width="367" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CN-6B-bSn">
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Share" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FqS-up-NFc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bG-X7-5SM">
+                                        <rect key="frame" x="97.5" y="0.0" width="74.5" height="31"/>
+                                        <color key="backgroundColor" red="0.89803922179999995" green="0.89803922179999995" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Safari" cornerStyle="large"/>
+                                        <connections>
+                                            <action selector="safariTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNv-5C-sCO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIE-oJ-xAj">
+                                        <rect key="frame" x="195" y="0.0" width="74.5" height="31"/>
+                                        <color key="backgroundColor" red="0.89803922179999995" green="0.89803922179999995" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Camera" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="cameraTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jGA-RS-nwZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ia-QT-7Zc">
+                                        <rect key="frame" x="292.5" y="0.0" width="74.5" height="31"/>
+                                        <color key="backgroundColor" red="0.89803922179999995" green="0.89803922179999995" blue="0.91764706370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Email"/>
+                                        <connections>
+                                            <action selector="emailTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWv-8o-PVe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgN-Cp-ZiR">
+                                <rect key="frame" x="180" y="603" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SMS"/>
+                                <connections>
+                                    <action selector="smsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1l-bS-Vc0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tKn-ph-85P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9jR-MW-Dsr"/>
+                            <constraint firstItem="pAG-KP-Fif" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MwV-ar-MNf"/>
+                            <constraint firstItem="tKn-ph-85P" firstAttribute="top" secondItem="pAG-KP-Fif" secondAttribute="bottom" constant="16" id="PVi-2i-KXG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pAG-KP-Fif" secondAttribute="trailing" constant="20" id="ioU-NP-8bw"/>
+                            <constraint firstItem="zgN-Cp-ZiR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nfN-XS-JcU"/>
+                            <constraint firstItem="zgN-Cp-ZiR" firstAttribute="top" secondItem="tKn-ph-85P" secondAttribute="bottom" constant="139" id="ns5-R8-GeK"/>
+                            <constraint firstItem="pAG-KP-Fif" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pby-74-a5Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pAG-KP-Fif" secondAttribute="bottom" constant="445" id="tpb-7q-4Wn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pAG-KP-Fif" id="hfZ-Bm-7J6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2021-09-28 22.54.24" width="720" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
