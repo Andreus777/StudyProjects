@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Emal to restrict a contest" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIY-Rx-2SX">
+                                <rect key="frame" x="15.5" y="73" width="383.5" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emal:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypT-zF-IVn">
+                                <rect key="frame" x="40" y="197" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s21-qU-cC3">
+                                <rect key="frame" x="156.5" y="727" width="101" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJX-vj-aak"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ypT-zF-IVn" firstAttribute="top" secondItem="wIY-Rx-2SX" secondAttribute="bottom" constant="84" id="97X-sG-ebJ"/>
+                            <constraint firstItem="ypT-zF-IVn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ELi-vo-haa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s21-qU-cC3" secondAttribute="bottom" constant="91" id="FCl-ce-TMO"/>
+                            <constraint firstItem="wIY-Rx-2SX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GXF-2C-cHw"/>
+                            <constraint firstItem="ypT-zF-IVn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="XbL-1h-d7L"/>
+                            <constraint firstItem="s21-qU-cC3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xc9-lj-bug"/>
+                            <constraint firstItem="wIY-Rx-2SX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="aGU-uV-yp4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypT-zF-IVn" secondAttribute="trailing" constant="40" id="fix-Gh-QID"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="ypT-zF-IVn" id="HoG-hm-0Rg"/>
+                        <segue destination="mMY-RY-UzU" kind="show" identifier="registration" id="paZ-Qa-5ty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HOc-Cp-aq5">
+            <objects>
+                <viewController id="mMY-RY-UzU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NfK-1d-2KV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have succsesfully registered" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPS-a1-ren">
+                                <rect key="frame" x="41" y="30" width="332.5" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S3u-wn-wR0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DPS-a1-ren" firstAttribute="centerX" secondItem="S3u-wn-wR0" secondAttribute="centerX" id="FSH-v1-uMY"/>
+                            <constraint firstItem="DPS-a1-ren" firstAttribute="top" secondItem="S3u-wn-wR0" secondAttribute="top" constant="30" id="R8a-xD-xtg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1PF-6h-Prq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o99-be-Sk3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
